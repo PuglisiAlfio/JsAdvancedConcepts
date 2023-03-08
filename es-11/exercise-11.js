@@ -1,14 +1,3 @@
-function adultFilter(persons) {
-  // ...
-  let adults = [];
-  persons.forEach(person => {
-    if(person.age >= 18){
-      adults.push(person);
-    }
-  });
-  return adults;  
-}
-
 const persons = [
   { name: 'Paul', age: 16 },
   { name: 'George', age: 17 },
@@ -21,6 +10,19 @@ const persons = [
   { name: 'Sandra', age: 34 },
   { name: 'Alice', age: 28 }
 ];
+
+function adultFilter(persons) {
+  // ...
+  // let adults = [];
+  // persons.forEach(person => {
+  //   if(person.age >= 18){
+  //     adults.push(person);
+  //   }
+  // });
+  // return adults;
+  const adultsFilter = persons.filter(person => person.age >= 18);
+  return adultsFilter;
+}
 
 const adults = adultFilter(persons);
 console.log(persons);
