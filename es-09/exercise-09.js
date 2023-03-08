@@ -5,5 +5,8 @@ const person = {
 }
 
 // Print values of person using Object.keys
-let persona = Object.keys(person);
-console.log(persona);
+//scrivere person[key] equivale a scrivere ".value"
+Object.keys(person).forEach((key) => {
+  console.log(`${key}: ${person[key]}`);
+});
+
