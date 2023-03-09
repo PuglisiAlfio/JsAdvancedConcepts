@@ -1,6 +1,6 @@
 function sortPeopleByAge(arr) {
   let sortedAge = arr.sort(
-    (a1, a2) => (a1.age > a2.age) ? 1 : (a1.age < a2.age) ? -1 : 0);
+    (a1, a2) => (a1.age - a2.age));
     return sortedAge;
 }
 
