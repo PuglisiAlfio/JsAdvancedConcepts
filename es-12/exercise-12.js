@@ -13,13 +13,9 @@ const persons = [
 
 function nicknameMap(persons) {
   // ...
-  const person = persons.map(nickname)
-  function nickname(person){
-    return[person.name, person.age].join("-");
-  }
+  let person = persons.map(persons => `${persons.name}-${persons.age}`);
   return person;
-
-}
+  }
 
 const nicknames = nicknameMap(persons);
 console.log(persons);
